@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="856.0" styleClass="gridPane" stylesheets="/styles/box.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.BoxController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="281.0" minWidth="10.0" prefWidth="210.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="576.0" minWidth="10.0" prefWidth="496.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="107.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="18.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="typeAndNameLabel" GridPane.columnIndex="1">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prodazhaLabel" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Label GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="81.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+      <Label fx:id="saleLabel" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberPhoneLabel" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="priorityLabel" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
