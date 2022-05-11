@@ -8,7 +8,7 @@ import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class AgentService implements Dao<Agent,Integer> {
+public class AgentService implements Dao<Agent> {
 
     private final SessionFactory factory;
 

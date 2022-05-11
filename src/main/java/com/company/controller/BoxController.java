@@ -23,13 +23,13 @@ public class BoxController {
     public void setDate(Agent agent){
         typeAndNameLabel.setText(agent.getType() + "|" + subText(agent.getName()));
         try {
-            Image image = new Image(String.valueOf(getClass().getResource("/images/" + agent.getLogCompany())));
+            Image image = new Image(String.valueOf(getClass().getResource("resources/images/" + agent.getLogCompany())));
             imageView.setImage(image);
         }catch (IllegalArgumentException e) {
             Image image = new Image("/picture.png");
             imageView.setImage(image);
         }
-            numberPhoneLabel.setText("+7 " + agent.getNumber());
+            numberPhoneLabel.setText(agent.getNumber());
             priorityLabel.setText("Приоритетность: " + agent.getPriority());
 
     }

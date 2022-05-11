@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 
-
 @ToString
 @RequiredArgsConstructor
 @NoArgsConstructor
@@ -56,7 +55,6 @@ public class Agent {
     @Column(name = "KPP")
     private int kpp;
 
-//    @OneToMany(mappedBy = "agents")
+    //    @OneToMany(mappedBy = "agents")
 //    Set<ProductSale> productSaleSet;
-
 }

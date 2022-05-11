@@ -8,7 +8,7 @@ import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class ProductSaleService implements Dao<ProductSale,Integer> {
+public class ProductSaleService implements Dao<ProductSale> {
 
     private final SessionFactory factory;
 

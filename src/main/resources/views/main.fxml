@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -15,12 +14,9 @@
          </children></AnchorPane>
    </top>
    <center>
-      <ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <content>
-            <VBox fx:id="vBox" prefHeight="71.0" prefWidth="597.0" spacing="30.0">
-               <padding>
-                  <Insets top="20.0" />
-               </padding></VBox>
+            <VBox fx:id="vBox" prefHeight="62.0" prefWidth="598.0" />
          </content>
       </ScrollPane>
    </center>

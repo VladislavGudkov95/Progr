@@ -42,6 +42,6 @@ public class Product {
     @Column(name = "min_cost")
     private int minCost;
 
-//    @OneToMany(mappedBy = "product_short")
+    //    @OneToMany(mappedBy = "product_short")
 //    Set<ProductSale> productSales;
 }

@@ -11,7 +11,7 @@ import java.util.List;
 public class Test {
     public static void main(String[] args) {
         SessionFactory factory = new Configuration().configure().buildSessionFactory();
-        Dao<Agent,Integer> agentDao = new AgentService(factory);
+        Dao<Agent> agentDao = new AgentService(factory);
 
         List<Agent> agents = agentDao.findAll();
 

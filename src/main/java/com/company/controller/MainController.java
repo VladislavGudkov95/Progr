@@ -4,17 +4,15 @@ import com.company.model.Agent;
 import com.company.service.AgentService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
+import javafx.scene.control.Pagination;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
@@ -24,6 +22,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class MainController {
@@ -34,7 +34,7 @@ public class MainController {
     @FXML
     public VBox vBox;
     @FXML
-    public ScrollPane scrollPane;
+    public Pagination listTitle;
 
     GridPane gridPane;
 
@@ -51,7 +51,6 @@ public class MainController {
     @FXML
     public void initialize() {
         agents.addAll(agentDao.findAll());
-
 
         for (Agent agent : agents) {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/box.fxml"));
@@ -93,6 +92,4 @@ public class MainController {
 
     public void update(ActionEvent actionEvent) {
     }
-
-
 }
